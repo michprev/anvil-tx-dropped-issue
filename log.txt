@@ -1,0 +1,144 @@
+Launching anvil --prune-history 100 --base-fee 0 --steps-tracing --silent --port 36445
+
+INFO     2023-02-10 17:35:11,501 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'web3_clientVersion', 'params': [], 'id': 0}                                                                      
+INFO     2023-02-10 17:35:11,506 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 0, "result": "anvil/v0.1.0"}                                                                                          
+INFO     2023-02-10 17:35:11,508 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_accounts', 'params': [], 'id': 1}                                                                            
+INFO     2023-02-10 17:35:11,509 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 1, "result": ["0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",                                                           
+         "0x70997970c51812dc3a010c7d01b50e0d17dc79c8", "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",                                                    
+         "0x90f79bf6eb2c4f870365e785982e1f101e93b906", "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",                                                    
+         "0x9965507d1a55bcc2695c58ba16fb37d819b0a4dc", "0x976ea74026e726554db657fa54763abd0c3a0aa9",                                                    
+         "0x14dc79964da2c08b23698b3d3cc7ca32193d9955", "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",                                                    
+         "0xa0ee7a142d267c1f36714e4a8f75612f20a79720"]}                                                                                                 
+INFO     2023-02-10 17:35:11,512 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_getBlockByNumber', 'params': ['pending', False], 'id': 2}                                                    
+INFO     2023-02-10 17:35:11,513 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 2, "result": {"hash": "0x9a866479a9a86cc0b875ecb61473d053e47d880462b5f86647116753be9ccdd4",                           
+         "parentHash": "0x52a53afacf322edcfb271b30397f677446f9a72b81554f509efab3517ac313f1", "sha3Uncles":                                              
+         "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347", "miner": "0x0000000000000000000000000000000000000000",                   
+         "stateRoot": "0x0000000000000000000000000000000000000000000000000000000000000000", "transactionsRoot":                                         
+         "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421", "receiptsRoot":                                                          
+         "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421", "number": "0x1", "gasUsed": "0x0", "gasLimit":                           
+         "0x1c9c380", "extraData": "0x", "logsBloom":                                                                                                   
+         "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                   
+         0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                   
+         0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                   
+         0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                   
+         0000000000000000000", "timestamp": "0x63e67240", "difficulty": "0x0", "totalDifficulty": "0x0", "sealFields":                                  
+         ["0x0000000000000000000000000000000000000000000000000000000000000000", "0x0000000000000000"], "uncles": [], "transactions":                    
+         [], "size": "0x1fe", "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000", "nonce":                                 
+         "0x0000000000000000", "baseFeePerGas": "0x0"}}                                                                                                 
+INFO     2023-02-10 17:35:11,517 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_chainId', 'params': [], 'id': 3}                                                                             
+INFO     2023-02-10 17:35:11,518 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 3, "result": "0x7a69"}                                                                                                
+INFO     2023-02-10 17:35:11,520 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_getTransactionCount', 'params': ['0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266',                               
+         <BlockEnum.LATEST: 'latest'>], 'id': 4}                                                                                                        
+INFO     2023-02-10 17:35:11,521 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 4, "result": "0x0"}                                                                                                   
+INFO     2023-02-10 17:35:11,522 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_sendUnsignedTransaction', 'params': [{'type': '0x0', 'nonce': '0x0', 'from':                                 
+         '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266', 'gas': '0x1c9c380', 'value': '0x0', 'data':                                                      
+         '0x608060405234801561001057600080fd5b50610244806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003                   
+         560e01c806306661abd146100515780632baeceb71461006f578063d09de08a14610079578063d14e62b814610083575b600080fd5b61005961009f565b6                   
+         0405161006691906100fe565b60405180910390f35b6100776100a5565b005b6100816100c0565b005b61009d6004803603810190610098919061014a565                   
+         b6100db565b005b60005481565b60016000808282546100b791906101a6565b92505081905550565b60016000808282546100d291906101da565b9250508                   
+         1905550565b8060008190555050565b6000819050919050565b6100f8816100e5565b82525050565b600060208201905061011360008301846100ef565b9                   
+         2915050565b600080fd5b610127816100e5565b811461013257600080fd5b50565b6000813590506101448161011e565b92915050565b600060208284031                   
+         2156101605761015f610119565b5b600061016e84828501610135565b91505092915050565b7f4e487b71000000000000000000000000000000000000000                   
+         00000000000000000600052601160045260246000fd5b60006101b1826100e5565b91506101bc836100e5565b92508282039050818111156101d4576101d                   
+         3610177565b5b92915050565b60006101e5826100e5565b91506101f0836100e5565b925082820190508082111561020857610207610177565b5b9291505                   
+         056fea2646970667358221220b525be757a954e4344d2591fe390363c28a911e4b87f8690664dcc1c3acb933564736f6c63430008120033',                              
+         'gasPrice': '0x0'}], 'id': 5}                                                                                                                  
+INFO     2023-02-10 17:35:11,527 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 5, "result": "0x8c16b2fd6557a283bc2ac48e1fce8873aadb58af04cd9d0af7e1bddbbca66c8e"}                                    
+INFO     2023-02-10 17:35:11,528 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_getTransactionReceipt', 'params':                                                                            
+         ['0x8c16b2fd6557a283bc2ac48e1fce8873aadb58af04cd9d0af7e1bddbbca66c8e'], 'id': 6}                                                               
+INFO     2023-02-10 17:35:11,530 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 6, "result": {"transactionHash":                                                                                      
+         "0x8c16b2fd6557a283bc2ac48e1fce8873aadb58af04cd9d0af7e1bddbbca66c8e", "transactionIndex": "0x0", "blockHash":                                  
+         "0x1745ff7afcc9b79bc1806a6225918a9cec0f064c6f123d1963b2fc0d0ffa6382", "blockNumber": "0x1", "from":                                            
+         "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266", "to": null, "cumulativeGasUsed": "0x2b71d", "gasUsed": "0x2b71d",                                
+         "contractAddress": "0x5fbdb2315678afecb367f032d93f642f64180aa3", "logs": [], "status": "0x1", "logsBloom":                                     
+         "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                   
+         0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                   
+         0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                   
+         0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                   
+         0000000000000000000", "effectiveGasPrice": "0x0"}}                                                                                             
+INFO     2023-02-10 17:35:11,533 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'anvil_getAutomine', 'params': [], 'id': 7}                                                                       
+INFO     2023-02-10 17:35:11,534 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 7, "result": true}                                                                                                    
+INFO     2023-02-10 17:35:11,535 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'evm_setAutomine', 'params': [False], 'id': 8}                                                                    
+INFO     2023-02-10 17:35:11,536 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 8, "result": null}                                                                                                    
+INFO     2023-02-10 17:35:11,538 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_estimateGas', 'params': [{'to': '0x5FbDB2315678afecb367f032d93F642f64180aa3', 'from':                        
+         '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266', 'value': '0x0', 'data': '0xd09de08a', 'gasPrice': '0x0'}, <BlockEnum.LATEST:                     
+         'latest'>], 'id': 9}                                                                                                                           
+INFO     2023-02-10 17:35:11,540 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 9, "result": "0xafb6"}                                                                                                
+INFO     2023-02-10 17:35:11,541 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_sendUnsignedTransaction', 'params': [{'type': '0x0', 'nonce': '0x1', 'to':                                   
+         '0x5FbDB2315678afecb367f032d93F642f64180aa3', 'from': '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266', 'gas': '0xafb6',                           
+         'value': '0x0', 'data': '0xd09de08a', 'gasPrice': '0x0'}], 'id': 10}                                                                           
+INFO     2023-02-10 17:35:11,543 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 10, "result": "0x1316ccdf776a1f4bc32849d8b322af8dcc40ca705036b240f79b56921551aa09"}                                   
+INFO     2023-02-10 17:35:11,544 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_estimateGas', 'params': [{'to': '0x5FbDB2315678afecb367f032d93F642f64180aa3', 'from':                        
+         '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266', 'value': '0x0', 'data': '0xd09de08a', 'gasPrice': '0x186a0'},                                    
+         <BlockEnum.LATEST: 'latest'>], 'id': 11}                                                                                                       
+INFO     2023-02-10 17:35:11,546 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 11, "result": "0xafb6"}                                                                                               
+INFO     2023-02-10 17:35:11,547 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_sendUnsignedTransaction', 'params': [{'type': '0x0', 'nonce': '0x2', 'to':                                   
+         '0x5FbDB2315678afecb367f032d93F642f64180aa3', 'from': '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266', 'gas': '0xafb6',                           
+         'value': '0x0', 'data': '0xd09de08a', 'gasPrice': '0x186a0'}], 'id': 12}                                                                       
+INFO     2023-02-10 17:35:11,549 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 12, "result": "0x4be17d2e15d442d88eba5bc626e4d1d330b7c15e28bf90f55e8b043d441522bc"}                                   
+INFO     2023-02-10 17:35:11,551 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_estimateGas', 'params': [{'to': '0x5FbDB2315678afecb367f032d93F642f64180aa3', 'from':                        
+         '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266', 'value': '0x0', 'data': '0xd09de08a', 'gasPrice': '0x0'}, <BlockEnum.LATEST:                     
+         'latest'>], 'id': 13}                                                                                                                          
+INFO     2023-02-10 17:35:11,552 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 13, "result": "0xafb6"}                                                                                               
+INFO     2023-02-10 17:35:11,553 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_sendUnsignedTransaction', 'params': [{'type': '0x0', 'nonce': '0x3', 'to':                                   
+         '0x5FbDB2315678afecb367f032d93F642f64180aa3', 'from': '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266', 'gas': '0xafb6',                           
+         'value': '0x0', 'data': '0xd09de08a', 'gasPrice': '0x0'}], 'id': 14}                                                                           
+INFO     2023-02-10 17:35:11,555 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 14, "result": "0xdb407b5ecfa30d6224bbcb90489166d070cb3954330c84beeba7c578f58f37c1"}                                   
+INFO     2023-02-10 17:35:11,556 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_getBlockByNumber', 'params': ['pending', False], 'id': 15}                                                   
+INFO     2023-02-10 17:35:11,558 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 15, "result": {"hash": "0x687803b5181de64b7d7f077a936349eadbe306f1c57757f239efb6147d475a0d",                          
+         "parentHash": "0x1745ff7afcc9b79bc1806a6225918a9cec0f064c6f123d1963b2fc0d0ffa6382", "sha3Uncles":                                              
+         "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347", "miner": "0x0000000000000000000000000000000000000000",                   
+         "stateRoot": "0x0000000000000000000000000000000000000000000000000000000000000000", "transactionsRoot":                                         
+         "0x7cb0d13d971e69b26fc820d80b179db5ad8035dfa7b43ba36a93d29d923e614d", "receiptsRoot":                                                          
+         "0xcfae2d10e608ca124da4a3a1813b9817a2be556afeded678bf7c4b6127cd0e92", "number": "0x2", "gasUsed": "0x11166", "gasLimit":                       
+         "0x1c9c380", "extraData": "0x", "logsBloom":                                                                                                   
+         "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                   
+         0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                   
+         0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                   
+         0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                   
+         0000000000000000000", "timestamp": "0x63e67241", "difficulty": "0x0", "totalDifficulty": "0x0", "sealFields":                                  
+         ["0x0000000000000000000000000000000000000000000000000000000000000000", "0x0000000000000000"], "uncles": [], "transactions":                    
+         ["0x4be17d2e15d442d88eba5bc626e4d1d330b7c15e28bf90f55e8b043d441522bc",                                                                         
+         "0xdb407b5ecfa30d6224bbcb90489166d070cb3954330c84beeba7c578f58f37c1"], "size": "0x24d", "mixHash":                                             
+         "0x0000000000000000000000000000000000000000000000000000000000000000", "nonce": "0x0000000000000000", "baseFeePerGas":                          
+         "0x0"}}                                                                                                                                        
+INFO     2023-02-10 17:35:11,562 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'eth_blockNumber', 'params': [], 'id': 16}                                                                        
+INFO     2023-02-10 17:35:11,563 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 16, "result": "0x1"}                                                                                                  
+INFO     2023-02-10 17:35:11,564 woke.testing.json_rpc.communicator: Sending request:                                                 communicator.py:92
+         {'jsonrpc': '2.0', 'method': 'evm_setAutomine', 'params': [True], 'id': 17}                                                                    
+INFO     2023-02-10 17:35:11,565 woke.testing.json_rpc.communicator: Received response:                                               communicator.py:96
+         {"jsonrpc": "2.0", "id": 17, "result": null}                                                                                                   
